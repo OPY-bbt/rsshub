@@ -1,0 +1,22 @@
+{
+    "name": "rsshub",
+    "private": true,
+    "scripts": {
+      "commit": "git-cz"
+    },
+    "devDependencies": {
+      "commitizen": "^3.0.5",
+      "cz-conventional-changelog": "2.1.0"
+    },
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-conventional-changelog"
+      }
+    },
+    "workspaces": {
+      "packages": [
+        "packages/*"
+      ],
+      "nohoist": []
+    }
+  }
